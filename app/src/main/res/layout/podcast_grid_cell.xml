@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_width="match_parent"
+    android:layout_height="240dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.29"
+        android:layout_height="200dp"
+        android:id="@+id/viewPlay">
+
+        <ImageView
+            android:layout_width="200dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imgViewSong"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitXY"
+            android:layout_margin="5dp"
+            android:layout_height="150dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            app:srcCompat="@android:drawable/ic_media_play"
+            android:id="@+id/btnPlay"
+            android:visibility="visible"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewTitle"
+        android:layout_weight="0.04"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imgViewSong"
+        android:scaleType="fitXY"
+        android:layout_height="75dp"
+        android:layout_width="85dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtViewTitle"
+            android:layout_marginLeft="10dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtViewPostedDate"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/viewPlayNow"
+            android:layout_height="50dp">
+
+            <ImageButton
+                android:layout_width="34dp"
+                android:layout_height="36dp"
+                app:srcCompat="@android:drawable/ic_media_play"
+                android:id="@+id/btnPlay"
+                android:layout_weight="0.03"
+                android:scaleType="fitXY"
+                android:layout_marginTop="-5dp"
+                android:layout_marginLeft="-2dp"/>
+
+            <TextView
+                android:text="@string/strPlayNow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView4"
+                android:layout_weight="1.00"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/yellow"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
